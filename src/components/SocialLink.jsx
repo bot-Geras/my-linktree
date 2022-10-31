@@ -1,8 +1,9 @@
-export default function SocialLinks() {
+export default function SocialLinks({github, slack}) {
   return (
     <div className="img-logo">
-      <img src="../slack.svg" alt="" />
-      <img src="../github.svg" alt="" />
+      <a href={slack}><img src="../slack.svg" alt="" /></a>
+      <a href={github}><img src="../github.svg" alt="" /></a>
+      
     </div>
   );
 }

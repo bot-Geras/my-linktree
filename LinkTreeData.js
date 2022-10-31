@@ -28,6 +28,11 @@ export default [
         link: "https://books.zuri.team/design-rules",
         btnId: "book__design",
         btn: "Design Books"
+    },
+    {
+        github: "https://github.com/bot-Geras",
+        slack: "https://app.slack.com/client/T042F7V19Q8/C041JU70S5U"
     }
+
     
 ]
