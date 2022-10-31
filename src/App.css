@@ -10,6 +10,7 @@ body {
 }
 
 body {
+  min-height: 100vh;
   background-color: #F4F5F7;
   font-family: 'Inter', sans-serif;
   display: flex;
@@ -33,7 +34,7 @@ p {
 }
 
 .App {
-  min-height: 100vh;
+  min-height: 50%;
   max-width: 375px;
   margin: 0 20px;
   background: #FFFFFF;
@@ -45,6 +46,7 @@ p {
 
 header {
   margin: 20px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;

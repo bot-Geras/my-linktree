@@ -9,7 +9,11 @@ export default function Content() {
   const linksHtmlContent = links.map(data => {
     return (
       <div className="btn-col">
-        <a href={data.link} className="btn-link" >{data.btn}</a>
+        <a href={data.link}
+         className="btn-link"
+         key={data.btnId}
+         id={data.btnId} >
+          {data.btn}</a>
       </div>
       
     )
