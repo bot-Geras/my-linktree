@@ -11,9 +11,7 @@ export default function Content(props) {
       <div className="btn-col">
         <a href={data.link}
          className="btn-link"
-         key={data.btnId}
-         id={data.btnId} >
-          {data.btn}</a>
+         key={data.btnId}>{data.btn}</a>
       </div>
       
     )

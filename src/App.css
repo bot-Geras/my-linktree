@@ -73,6 +73,7 @@ header {
   z-index: 2;
   /* Base/White */
   background: #FFFFFF;
+  cursor: pointer;
 }
 
 main {
@@ -95,6 +96,7 @@ main {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
+  cursor: pointer;
 
 }
 
