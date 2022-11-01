@@ -59,6 +59,17 @@ header {
 
 .header-img {
   z-index: 0;
+  padding: 0px;
+
+  width: 88px;
+  height: 88px;
+  background: url("../public/profile__img.jpg");
+  border-radius: 200px;
+  background-position: center;
+  background-size: contain;
+  
+
+
 }
 
 .header-title {
