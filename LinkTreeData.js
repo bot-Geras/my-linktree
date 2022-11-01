@@ -15,7 +15,7 @@ export default [
         btn: "Zuri Books"
     },
     {
-        link: "https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>",
+        link: "https://books.zuri.team/python-for-beginners?ref_id=<Brian David>",
         btnId: "book__python",
         btn: "Python Books"
     },
