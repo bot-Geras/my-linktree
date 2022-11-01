@@ -34,6 +34,7 @@ p {
 }
 
 .App {
+  padding: 20px;
   min-height: 50%;
   max-width: 375px;
   margin: 0 20px;
@@ -42,6 +43,13 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 1440px ) {
+  .App {
+    min-width: 1440px;
+  }
+  
 }
 
 header {
@@ -60,16 +68,13 @@ header {
 .header-img {
   z-index: 0;
   padding: 0px;
-
-  width: 88px;
-  height: 88px;
-  background: url("../public/profile__img.jpg");
+  width: 70px;
+  height: 70px;
+  background: url("../profile__img.jpg");
   border-radius: 200px;
   background-position: center;
   background-size: contain;
   
-
-
 }
 
 .header-title {
@@ -85,6 +90,27 @@ header {
   /* Base/White */
   background: #FFFFFF;
   cursor: pointer;
+}
+
+@media (min-width: 1152px) {
+
+  header {
+    width: 1152px;
+    
+  }
+
+  header > .header-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .header-img {
+    width: 80px;
+height: 80px;
+border-radius: 275px;
+  }
+  
 }
 
 main {
@@ -129,6 +155,26 @@ main {
   filter: drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.05));
 }
 
+@media (min-width: 1152px) {
+  .btn-col {
+    min-width: 1216px;
+  }
+
+  .btn-col > a {
+    font-weight: 500;
+    font-size: 18px;
+line-height: 28px;
+color: #101828;
+  }
+
+  .btn-link {
+    min-width: 1152px;
+  }
+
+
+  
+}
+
 .img-logo {
   margin-top: 20px;
   display: flex;
@@ -164,4 +210,16 @@ footer {
   order: 0;
   align-self: stretch;
   flex-grow: 0;
+}
+
+@media (min-width: 1280px) {
+  footer {
+    min-width: 1280px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    
+  }
+  
 }
