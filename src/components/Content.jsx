@@ -23,6 +23,7 @@ export default function Content() {
   return (
     <main>
       {linksHtmlContent}
+      <button className="btn-link btn">Contact Me</button>
       <SocialLink />
     </main>
   );
