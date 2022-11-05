@@ -24,11 +24,7 @@ export default function Content() {
   return (
     <main>
       {linksHtmlContent}
-      
-      <button className="btn-link btn">
-        <Link to="/contact">Contact Me</Link>
-      </button>
-      
+        <Link to="/contact"><button className="btn-link btn">Contact Me </button></Link>
       <SocialLink />
     </main>
   );
