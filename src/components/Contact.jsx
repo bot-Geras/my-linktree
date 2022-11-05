@@ -40,6 +40,7 @@ export default function Contact() {
                 onChange={handleChange}
                 name="firstname"
                 value={formData.firstname}
+                placeholder="Enter your first name"
               />
             </div>
 
@@ -52,6 +53,7 @@ export default function Contact() {
                 onChange={handleChange}
                 name="lastname"
                 value={formData.lastname}
+                placeholder="Enter your last name"
               />
             </div>
           </div>
@@ -65,6 +67,7 @@ export default function Contact() {
               onChange={handleChange}
               name="mail"
               value={formData.mail}
+              placeholder="yourname@email.com"
             />
           </div>
 
