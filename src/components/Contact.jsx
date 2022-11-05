@@ -50,7 +50,7 @@ export default function Contact() {
                 id="last_name"
                 type="text"
                 onChange={handleChange}
-                name="secondname"
+                name="lastname"
                 value={formData.lastname}
               />
             </div>
