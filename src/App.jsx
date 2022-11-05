@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Contact from "./pages/Contact"
+import Contact from "./pages/Contact";
 import LinkTree from "./pages/Linktree";
 
 function App() {
@@ -9,14 +9,10 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<LinkTree />} />
-            
 
-          <Route path="/contact" element={ <Contact />} />
-           
-
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
-      
     </div>
   );
 }
