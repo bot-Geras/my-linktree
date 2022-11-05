@@ -31,20 +31,25 @@ export default function Contact() {
       <p>Hi there, contact me to ask me about anything you have in mind.</p>
       <section>
       <form onSubmit={handleSubmit}>
-        <div className="input-row">
+
+        
+        <div className="row_inputs">
+        <div className="input_col">
         <label htmlFor="first_name">First Name</label>
         <input
-          
+          className="input-1"
           id="first_name"
           type="text"
           onChange={handleChange}
           name="firstname"
           value={formData.firstname}
         />
+        </div>
 
+        <div className="input_col">
         <label htmlFor="last_name">Last Name</label>
         <input
-          
+          className="input-2"
           id="last_name"
           type="text"
           onChange={handleChange}
@@ -52,26 +57,35 @@ export default function Contact() {
           value={formData.lastname}
         />
         </div>
+        </div>
+       
 
+        <div className="input_col">
         <label htmlFor="email">Email</label>
         <input
+        className="input-3"
           id="email"
           type="email"
           onChange={handleChange}
           name="mail"
           value={formData.mail}
         />
+        </div>
 
+        <div className="input_col">
         <label htmlFor="message">Message</label>
         <textarea
           id="message"
           name="message"
           onChange={handleChange}
           value={formData.message}
+          placeholder="Send me a message and I'll reply you as soon as possible..."
         />
+        </div>
 
         <div className="checkbox">
         <input
+        className="input-4"
           type="checkbox"
           onChange={handleChange}
           id="check"
