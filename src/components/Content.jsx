@@ -1,10 +1,11 @@
 import { useState } from "react";
 import SocialLink from "../components/SocialLink"
 import data from "/LinkTreeData"
+import { Link } from "react-router-dom";
 
 export default function Content() {
   // console.log(data)
-  const [links, setLnks] = useState(data)
+  const [links, setLinks] = useState(data)
 
   const linksHtmlContent = links.map(data => {
     return (
@@ -23,7 +24,11 @@ export default function Content() {
   return (
     <main>
       {linksHtmlContent}
-      <button className="btn-link btn">Contact Me</button>
+      
+      <button className="btn-link btn">
+        <Link to="/contact">Contact Me</Link>
+      </button>
+      
       <SocialLink />
     </main>
   );

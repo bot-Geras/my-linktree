@@ -1,14 +1,22 @@
 import "./App.css";
-import Header from "./components/Header";
-import Content from "./components/Content";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Contact from "./pages/Contact"
+import LinkTree from "./pages/Linktree";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Content />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<LinkTree />} />
+            
+
+          <Route path="/contact" element={ <Contact />} />
+           
+
+        </Routes>
+      </Router>
+      
     </div>
   );
 }

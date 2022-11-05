@@ -1,12 +1,13 @@
-import { useState } from "react";
+import {useState} from "react"
+import Footer from "../components/Footer"
 
 export default function Contact() {
-  const { formData, setFormData } = useState({
-    firstName: "",
-    lastName: "",
+  const [ formData, setFormData ] = useState({
+    firstname: "",
+    lastname: "",
     mail: "",
     message: "",
-    isAgreed: false,
+    isAgreed: false
   });
 
   function handleChange(event) {
@@ -21,30 +22,37 @@ export default function Contact() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(formData);
+    
   }
 
   return (
-    <div>
+    <div className="contact-pg">
       <h2>Contact Me</h2>
       <p>Hi there, contact me to ask me about anything you have in mind.</p>
+      <section>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="fist_name">First Name</label>
+        <div className="input-row">
+        <label htmlFor="first_name">First Name</label>
         <input
+          
           id="first_name"
           type="text"
           onChange={handleChange}
-          name="firstName"
-          value={formData.firstName}
+          name="firstname"
+          value={formData.firstname}
         />
+
         <label htmlFor="last_name">Last Name</label>
         <input
+          
           id="last_name"
           type="text"
           onChange={handleChange}
-          name="secondName"
-          value={formData.lastName}
+          name="secondname"
+          value={formData.lastname}
         />
+        </div>
+
         <label htmlFor="email">Email</label>
         <input
           id="email"
@@ -53,6 +61,7 @@ export default function Contact() {
           name="mail"
           value={formData.mail}
         />
+
         <label htmlFor="message">Message</label>
         <textarea
           id="message"
@@ -60,6 +69,8 @@ export default function Contact() {
           onChange={handleChange}
           value={formData.message}
         />
+
+        <div className="checkbox">
         <input
           type="checkbox"
           onChange={handleChange}
@@ -67,9 +78,18 @@ export default function Contact() {
           checked={formData.isAgreed}
           name="isAgreed"
         />
-        <label htmlFor="check"> Hi to all</label>
-        <button id="btn_submit">Send message</button>
+        <label htmlFor="check">You agree to providing your data to {formData.firstname} who may contact you.</label>
+        </div>
+
+        <button className="submit__btn" id="btn_submit">Send message</button>
       </form>
+
+      </section>
+     
+      
+
+      <Footer />
+
     </div>
   );
 }
