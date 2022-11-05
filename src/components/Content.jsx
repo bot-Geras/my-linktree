@@ -25,8 +25,8 @@ export default function Content() {
   return (
     <main>
       {linksHtmlContent}
-      <Link to="/contact">
-        <button className="btn-link btn">Contact Me </button>
+      <Link className="btn-link" to="/contact">
+        Contact Me 
       </Link>
       <SocialLink />
     </main>
