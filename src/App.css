@@ -186,6 +186,7 @@ main {
 
   .btn-link {
     min-width: 1152px;
+    text-decoration: none;
   }
 
   .btn {
