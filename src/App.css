@@ -253,6 +253,39 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+}
+
+.contact-title_detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.contact-title {
+  
+  font-size: 36px;
+line-height: 44px;
+/* identical to box height, or 122% */
+
+letter-spacing: -0.02em;
+
+/* Gray/900 */
+
+color: #101828;
+}
+
+.contact-detail {
+  font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+
+/* Gray/600 */
+
+color: #475467;
 }
 
 section {
@@ -265,6 +298,33 @@ form {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+
+}
+
+label {
+  font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+/* Gray/700 */
+
+color: #344054;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Gray/500 */
+
+color: #667085;
 
 }
 
@@ -345,6 +405,32 @@ textarea {
 
 @media (min-width: 1280px) {
 
+  .contact-title {
+  
+    font-weight: 600;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height, or 122% */
+
+letter-spacing: -0.02em;
+  
+  /* Gray/900 */
+  
+  color: #101828;
+  }
+  
+  .contact-detail {
+    font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+  /* or 156% */
+  
+  
+  /* Gray/600 */
+  
+  color: #475467;
+  }
+
   form {
     align-items: center;
   }
@@ -352,7 +438,7 @@ textarea {
   .row_inputs {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 24px;
 
   }
 

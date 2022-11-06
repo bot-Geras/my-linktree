@@ -26,8 +26,12 @@ export default function Contact() {
 
   return (
     <div className="contact-pg">
-      <h2>Contact Me</h2>
-      <p>Hi there, contact me to ask me about anything you have in mind.</p>
+      <div className="contact-title_detail">
+      <h2 className="contact-title">Contact Me</h2>
+      <p className="contact-detail">Hi there, contact me to ask me about anything you have in mind.</p>
+
+      </div>
+      
       <section>
         <form onSubmit={handleSubmit}>
           <div className="row_inputs">
@@ -97,7 +101,7 @@ export default function Contact() {
             </label>
           </div>
 
-          <button className="submit__btn" id="btn_submit">
+          <button className="submit__btn" id="btn__submit">
             Send message
           </button>
         </form>
