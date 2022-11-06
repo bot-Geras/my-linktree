@@ -4,7 +4,7 @@ import Footer from "../components/Footer"
 
 function LinkTree () {
     return (
-        <div>
+        <div className="App">
             <Header />
             <Content />
             <Footer />
